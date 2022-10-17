@@ -13,6 +13,8 @@ const pessoa01 = new Pessoa('Luiz', 'Carvalho');
 const pessoa02 = new Pessoa('Miranda', 'Grande');
 
 console.log(Pessoa.prototype === pessoa01.__proto__); // É o mesmo objeto prototype que está linkado em todos os objetos do construtor
+// pessoa01 -> Pessoa.prototype -> Object.prototype
+// instatciaDoObjeto -> Prototype da Classa Construtora -> Object.prototype
 
 console.log(pessoa01.atributoComum);
 console.log(pessoa02.atributoComum);
